@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '10'
+before_install:
+- npm install -g @angular/cli
+install: npm install
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  app: qtv-app
+  skip_cleanup: true
+  api_key:
+    secure: QlYZbheeqMHi2g2MI5TGIq5d6mjeOJnhXo601gFrP9iZ4oi0QbXJlhvyrJN/mQO8q4aQGxxM7q/oiQE3nBMv7y/LZ6EhP8APWZzDs0WsUV04bdeF7ZOGJsXuKKevXBGoSmr6KkQqzqAYFV3REN3S0SPUBkkhRkYivlihx5op7OqcAnDdkEiNsJutR3UlQls+7HJyyDv5Ht8w5Hwc6oXdDvIRWXpUCeVIY1c8EjTihjS91O9J7my9svm6WqTDYxPM261+gaVSfjv5Zw994dBLCk1TyPYtJY7SWh42R96XxIZb3//tFvEpK8PT0E6CsxTqCF7EqyqwQmusj7SA39Tx2gpshH7LnmrNFNC33qcNxDnvCg3qyrLDA+bVe6kkJq0eYCH1anGigZ+efJP8r4Y3ytRp8l94t0U2DCQBYS0qJ1FY1r23SSme0GSAgAK87ai8/WrwoM4GSDSd4DG8M5k192cBrZ5ePAFvBhACxYu6SpmCICiV7W+RjFbYGQieo4kYGBGKOwB3n0VFlgUaCS5ccnJKMkqWx+6ndwOyH2MvJauYErq+50RZdQJqXzmbKyG816hlAMSSNlNI5OznUtnUB0a+c5GJJTkvcrTAj//cNnMLfN7vTDrTkOvIkS4DZ8cwozUvn25Vs0wARiNP8OFdSYVWlcCcZeJc5zaCAb4Vp8E= 
